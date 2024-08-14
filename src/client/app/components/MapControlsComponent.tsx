@@ -11,6 +11,8 @@ import { selectMapBarWidthDays, updateMapsBarDuration } from '../redux/slices/gr
 import translate from '../utils/translate';
 import MapChartSelectComponent from './MapChartSelectComponent';
 import TooltipMarkerComponent from './TooltipMarkerComponent';
+import { labelStyle } from '../styles/modalStyle';
+
 /**
  * @returns Map page controls
  */
@@ -41,12 +43,6 @@ export default function MapControlsComponent() {
 		</div>
 	);
 }
-
-
-const labelStyle: React.CSSProperties = {
-	fontWeight: 'bold',
-	margin: 0
-};
 
 const zIndexFix: React.CSSProperties = {
 	zIndex: 0

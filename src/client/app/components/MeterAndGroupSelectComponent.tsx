@@ -19,6 +19,8 @@ import { ChartTypes, MeterOrGroup } from '../types/redux/graph';
 import translate from '../utils/translate';
 import TooltipMarkerComponent from './TooltipMarkerComponent';
 import { selectAnythingFetching } from '../redux/selectors/apiSelectors';
+import { labelStyle } from '../styles/modalStyle';
+
 /**
  * Creates a React-Select component for the UI Options Panel.
  * @param props - Helps differentiate between meter or group options
@@ -143,9 +145,4 @@ const customStyles: StylesConfig<SelectOption, true, GroupedOption> = {
 		...base,
 		backgroundColor: props.data.isDisabled ? 'hsl(0, 0%, 70%)' : base.backgroundColor
 	})
-};
-
-const labelStyle: React.CSSProperties = {
-	fontWeight: 'bold',
-	margin: 0
 };

@@ -16,7 +16,7 @@ import { showErrorNotification, showSuccessNotification } from '../../utils/noti
 import translate from '../../utils/translate';
 import TimeZoneSelect from '../TimeZoneSelect';
 import { defaultAdminState } from '../../redux/slices/adminSlice';
-
+import { labelStyle } from '../../styles/modalStyle';
 
 // TODO: Add warning for invalid data
 /**
@@ -349,11 +349,6 @@ export default function PreferencesComponent() {
 		</div >
 	);
 }
-
-const labelStyle: React.CSSProperties = {
-	fontWeight: 'bold',
-	margin: 0
-};
 
 const titleStyle: React.CSSProperties = {
 	fontWeight: 'bold',
