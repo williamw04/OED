@@ -12,6 +12,7 @@ import { ConversionData } from '../../types/redux/conversions';
 import TooltipMarkerComponent from '../TooltipMarkerComponent';
 import ConversionViewComponent from './ConversionViewComponent';
 import CreateConversionModalComponent from './CreateConversionModalComponent';
+import { titleStyle } from '../../styles/modalStyle';
 
 /**
  * Defines the conversions page card view
@@ -29,10 +30,6 @@ export default function ConversionsDetailComponent() {
 			unitDataById: data && unitsAdapter.getSelectors().selectEntities(data)
 		})
 	});
-
-	const titleStyle: React.CSSProperties = {
-		textAlign: 'center'
-	};
 
 	const tooltipStyle = {
 		display: 'inline-block',
