@@ -15,6 +15,7 @@ import { ChartTypes } from '../types/redux/graph';
 import { State } from '../types/redux/state';
 import translate from '../utils/translate';
 import TooltipMarkerComponent from './TooltipMarkerComponent';
+import { labelStyle } from '../styles/modalStyle';
 
 /**
  *  A component that allows users to select which chart should be displayed.
@@ -68,7 +69,3 @@ export default function ChartSelectComponent() {
 		</ >
 	);
 }
-const labelStyle: React.CSSProperties = {
-	fontWeight: 'bold',
-	margin: 0
-};

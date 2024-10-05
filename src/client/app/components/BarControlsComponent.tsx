@@ -10,6 +10,7 @@ import { useAppDispatch, useAppSelector } from '../redux/reduxHooks';
 import { graphSlice, selectBarStacking, selectBarWidthDays } from '../redux/slices/graphSlice';
 import translate from '../utils/translate';
 import TooltipMarkerComponent from './TooltipMarkerComponent';
+import { labelStyle } from '../styles/modalStyle';
 
 /**
  * @returns controls for the Options Ui page.
@@ -140,9 +141,4 @@ export default function BarControlsComponent() {
 const divTopBottomPadding: React.CSSProperties = {
 	paddingTop: '15px',
 	paddingBottom: '15px'
-};
-
-const labelStyle: React.CSSProperties = {
-	fontWeight: 'bold',
-	margin: 0
 };
