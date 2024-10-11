@@ -24,3 +24,11 @@ export const labelStyle: React.CSSProperties = {
 	fontWeight: 'bold',
 	margin: 0
 };
+
+export const zIndexFix: React.CSSProperties = {
+	zIndex: 0
+};
+
+export const titleStyle: React.CSSProperties = {
+	textAlign: 'center'
+};

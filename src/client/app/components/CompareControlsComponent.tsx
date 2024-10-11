@@ -10,6 +10,7 @@ import { useAppDispatch, useAppSelector } from '../redux/reduxHooks';
 import { ComparePeriod, SortingOrder } from '../utils/calculateCompare';
 import translate from '../utils/translate';
 import TooltipMarkerComponent from './TooltipMarkerComponent';
+import { zIndexFix } from '../styles/modalStyle';
 
 /**
  * @returns controls for the compare page
@@ -83,7 +84,3 @@ export default function CompareControlsComponent() {
 		</div>
 	);
 }
-
-const zIndexFix: React.CSSProperties = {
-	zIndex: 0
-};

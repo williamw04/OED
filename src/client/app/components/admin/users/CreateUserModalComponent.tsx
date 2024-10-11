@@ -104,7 +104,6 @@ export default function CreateUserModal() {
 
 	const tooltipStyle = {
 		...tooltipBaseStyle,
-		// Only an admin can create a meter.
 		tooltipUsersView: 'help.admin.users'
 	};
 
